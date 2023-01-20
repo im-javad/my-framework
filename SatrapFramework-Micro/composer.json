@@ -1,0 +1,10 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "hisorange/browser-detect": "^4.5",
+        "catfan/medoo": "^2.1"
+    },
+    "autoload": {
+        "psr-4": { "App\\" : "App/"}
+    }
+}
