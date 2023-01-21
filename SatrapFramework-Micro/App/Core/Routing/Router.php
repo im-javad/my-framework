@@ -90,8 +90,8 @@ class Router{
         if(is_null($this->currentRoute))
             viewError('404');
 
-        $this->handleMiddleware($this->currentRoute['middlewar']);
-
+        $this->handleMiddleware($this->currentRoute['middlewar'] ?? null);
+        
         $this->handleController($this->currentRoute['controller']);
     }
 
@@ -101,7 +101,7 @@ class Router{
      * @param array $middleware
      * @return null|void
      */
-    public function handleMiddleware(array $middleware){
+    public function handleMiddleware(array|null $middleware){
         if(is_null($middleware))
             return null;
 

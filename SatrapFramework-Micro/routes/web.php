@@ -3,5 +3,5 @@
 
 use App\Core\Routing\Route;
 
-Route::get('/home' , 'HomeController@index');
+Route::get('/' , 'HomeController@index');
 

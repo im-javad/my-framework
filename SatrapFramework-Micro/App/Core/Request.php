@@ -14,7 +14,7 @@ class Request{
      * Request ball preparation (con)
      */ 
     public function __construct(){
-        $this->route = strtok($_SERVER['REQUEST_URL']);
+        $this->route = strtok($_SERVER['REQUEST_URI'] , '?');
         $this->method = $_SERVER['REQUEST_METHOD'];
         $this->domain = $_SERVER['SERVER_NAME'];
         $this->port = $_SERVER['SERVER_PORT'];

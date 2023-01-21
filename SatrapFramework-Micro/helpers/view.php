@@ -25,7 +25,7 @@ function viewError(string $errorCode){
  * @param array|null $data
  * @return void
  */
-function view(string $sidePath , array $data = null){
+function view(string $sidePath , array $data = []){
     extract($data);
 
     $filePath = realpath(BASE_PATH . "repository/views/{$sidePath}.php");

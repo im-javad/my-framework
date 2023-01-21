@@ -20,7 +20,7 @@ class Route{
      * @param array|null $middleware
      * @return void
      */
-    public function add(string|array $methods , string $uri , string $controller , array $middleware = null){
+    public static function add(string|array $methods , string $uri , string $controller , array $middleware = null){
         $methods = is_array($methods) ? $methods : [$methods];
 
         self::$routes[] = [
