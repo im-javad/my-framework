@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+.center-xy {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+html, body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 16px;
+}
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+}
+
+.copy-container {
+  text-align: center;
+}
+
+p {
+  color: #0cff00;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+

@@ -1,6 +1,7 @@
 <?PhP 
 namespace App\Core;
 
+#To get request information for the framework
 class Request{
     private $route;
     private $method;
@@ -82,7 +83,7 @@ class Request{
      * @return array|null 
      */
     public function getRouteParam(){
-        
+        return $this->routeParam;
     }
 }
 
