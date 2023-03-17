@@ -133,7 +133,7 @@ class Router{
         try{        
             $controllerObject->{$controllerMethod}();
         }catch(\Throwable $th){
-            echo $th->getMessage();
+            echo $th->getMessage(); #! chaining!!!!!
         }
     }
 }
